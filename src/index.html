@@ -9,8 +9,47 @@
 
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <nav class="wrapper flex itemst-center justify-between gap-8 py-6">
+        <div class="flex items-center gap-8 w-full 2md:w-fit justify-between">
+            <div class="w-[120px] sm:w-[156px]">
+                <img class="w-full" src="../assets/Logo.svg" alt="">
+            </div>
+            <div id="menu-toggle" class="block 2md:hidden">
+                <i class="material-icons">Menu</i>
+            </div>
+        </div>
+        <div id="menu"
+            class="2md:flex items-center w-full justify-between flex-col 2md:flex-row absolute top-[80px] bg  px-10 py-3 left-0 shadow 2md:static 2md:p-0 2md:shadow-none"
+        >
+            <ul class="flex flex-col 2md:flex-row gap-8">
+                <li><a class="text-mainText font-medium capitalize" href="#">Company</a></li>
+                <li><a class="text-mainText font-medium capitalize" href="">Marketplace</a></li>
+                <li><a class="text-mainText font-medium capitalize" href="">Features</a></li>
+                <li><a class="text-mainText font-medium capitalize" href="">Team</a></li>
+                <li><a class="text-mainText font-medium capitalize" href="">Contact</a></li>
+            </ul>
+            <div class="flex items-center gap-8">
+                <button class="capitalize  text-mainText ">Log in</button>
+                <button class="bg-primary capitalize px-3 py-2 rounded-lg text-white button">Get Stated</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <script>
+        const menuToggle= document.getElementById('menu-toggle');
+        const menu= document.getElementById('menu');
+
+        menuToggle.addEventListener('click',()=>{
+            menu.classList.toggle('hidden');
+            if(menu.classList.contains('hidden')){
+                menuToggle.innerHTML='<i class="material-icons">Menu</i>';
+            }else{
+                menuToggle.innerHTML='<i class="material-icons">Close</i>';
+            }
+        })
+    </script>
 </body>
 </html>
