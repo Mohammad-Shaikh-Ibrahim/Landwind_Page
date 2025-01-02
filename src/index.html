@@ -1,55 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landwind</title>
-  <link rel="icon" href="../assets/logo2.svg" type="image/x-icon">
-  <link href="./output.css" rel="stylesheet">
-
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landwind</title>
+    <link rel="icon" href="../assets/logo2.svg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
     <nav class="wrapper flex itemst-center justify-between gap-8 py-6">
-        <div class="flex items-center gap-8 w-full 2md:w-fit justify-between">
-            <div class="w-[120px] sm:w-[156px]">
-                <img class="w-full" src="../assets/Logo.svg" alt="">
-            </div>
-            <div id="menu-toggle" class="block 2md:hidden">
-                <i class="material-icons">Menu</i>
-            </div>
+      <div class="flex items-center gap-8 w-full 2md:w-fit justify-between">
+        <div class="w-[120px] sm:w-[156px]">
+          <img class="w-full" src="../assets/Logo.svg" alt="" />
         </div>
-        <div id="menu"
-            class="2md:flex items-center w-full justify-between flex-col 2md:flex-row absolute top-[80px] bg  px-10 py-3 left-0 shadow 2md:static 2md:p-0 2md:shadow-none"
-        >
-            <ul class="flex flex-col 2md:flex-row gap-8">
-                <li><a class="text-mainText font-medium capitalize" href="#">Company</a></li>
-                <li><a class="text-mainText font-medium capitalize" href="">Marketplace</a></li>
-                <li><a class="text-mainText font-medium capitalize" href="">Features</a></li>
-                <li><a class="text-mainText font-medium capitalize" href="">Team</a></li>
-                <li><a class="text-mainText font-medium capitalize" href="">Contact</a></li>
-            </ul>
-            <div class="flex items-center gap-8">
-                <button class="capitalize  text-mainText ">Log in</button>
-                <button class="bg-primary capitalize px-3 py-2 rounded-lg text-white button">Get Stated</button>
-            </div>
+        <div id="menu-toggle" class="block 2md:hidden">
+          <i class="material-icons">menu</i>
         </div>
+      </div>
+      <div
+        id="menu"
+        class="2md:flex items-center w-full justify-between flex-col 2md:flex-row absolute top-[80px] bg px-10 py-3 left-0 shadow 2md:static 2md:p-0 2md:shadow-none"
+      >
+        <ul class="flex flex-col 2md:flex-row gap-8">
+          <li>
+            <a class="text-mainText font-medium capitalize" href="#">Company</a>
+          </li>
+          <li>
+            <a class="text-mainText font-medium capitalize" href=""
+              >Marketplace</a
+            >
+          </li>
+          <li>
+            <a class="text-mainText font-medium capitalize" href="">Features</a>
+          </li>
+          <li>
+            <a class="text-mainText font-medium capitalize" href="">Team</a>
+          </li>
+          <li>
+            <a class="text-mainText font-medium capitalize" href="">Contact</a>
+          </li>
+        </ul>
+        <div class="flex items-center gap-8">
+          <button class="capitalize text-mainText">Log in</button>
+          <button
+            class="bg-primary capitalize px-3 py-2 rounded-lg text-white button"
+          >
+            Get Stated
+          </button>
+        </div>
+      </div>
     </nav>
 
-
-
+    <header class="wrapper py-16">
+      <div class="flex flex-col 2md:flex-row gap-24 items-center justify-between">
+        <div class="w-full 2md:w-[50%]">
+          <h1 class="text-mainText text-4xl 2md:text-6xl font-black mb-6">
+            Building Digital Products & Brands.
+          </h1>
+          <p class="text-secondaryText text-xl">
+            Here at flowbite we focus on markets where technology, innovation
+            and design are key. We are passionate about building digital
+            products and brands.
+          </p>
+          <div class="flex mt-10 gap-4">
+            <button class="button px-5 py-3">Start 30 Day Free Trial</button>
+            <button class="px-5 py-3 border border-[#E5E7EB] rounded-lg">
+              Pricing & FAQ
+            </button>
+          </div>
+        </div>
+        <div class="w-full 2md:w-[40%]">
+          <img class="w-full" src="../assets/marketing-strategy 1.svg" alt="" />
+        </div>
+      </div>
+      <div class="grid grid-cols-2 2md:grid-cols-3 xl:grid-cols-6 gap-3">
+        <img src="../assets/Google.svg" alt="" />
+        <img src="../assets/Spotify.svg" alt="" />
+        <img src="../assets/Microsoft.svg" alt="" />
+        <img src="../assets/Airbnb.svg" alt="" />
+        <img src="../assets/Mailchimp.svg" alt="" />
+        <img src="../assets/Group.svg" alt="" />
+      </div>
+    </header>
 
     <script>
-        const menuToggle= document.getElementById('menu-toggle');
-        const menu= document.getElementById('menu');
+      const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
 
-        menuToggle.addEventListener('click',()=>{
-            menu.classList.toggle('hidden');
-            if(menu.classList.contains('hidden')){
-                menuToggle.innerHTML='<i class="material-icons">Menu</i>';
-            }else{
-                menuToggle.innerHTML='<i class="material-icons">Close</i>';
-            }
-        })
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        if (menu.classList.contains("hidden")) {
+          menuToggle.innerHTML = '<i class="material-icons">menu</i>';
+        } else {
+          menuToggle.innerHTML = '<i class="material-icons">close</i>';
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
