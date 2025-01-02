@@ -786,8 +786,29 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .pt-24{
   padding-top: 6rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
 .text-4xl{
@@ -797,6 +818,11 @@ video {
 
 .text-xl{
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -810,6 +836,14 @@ video {
 
 .font-extrabold{
   font-weight: 800;
+}
+
+.font-light{
+  font-weight: 300;
+}
+
+.font-bold{
+  font-weight: 700;
 }
 
 .capitalize{
@@ -833,6 +867,37 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-primary{
+  --tw-text-opacity: 1;
+  color: rgb(126 58 242 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\]{
+  color: ;
+}
+
+.text-\[\#\]{
+  color: #;
+}
+
+.text-\[\#6B\]{
+  color: #6B;
+}
+
+.text-\[\#6B7\]{
+  --tw-text-opacity: 1;
+  color: rgb(102 187 119 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#6B7280\]{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#6\]{
+  color: #6;
 }
 
 .shadow{
@@ -886,6 +951,10 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .\32md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .\32md\:flex-row{
     flex-direction: row;
   }
@@ -917,7 +986,15 @@ body {
 }
 
 @media (min-width: 1280px){
+  .xl\:grid{
+    display: grid;
+  }
+
   .xl\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
