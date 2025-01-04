@@ -11,6 +11,7 @@ module.exports = {
         'primary': '#7E3AF2',
         'secondaryText': '#6B7280',
         'mainText': '#111928',
+        'bgSection': '#F9FAFB',
       },
       fontFamily: { // Fixed font family declaration
         Inter: ['Inter', 'sans-serif'],
